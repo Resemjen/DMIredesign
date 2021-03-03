@@ -1,22 +1,14 @@
 {
-  "name": "website",
+  "name": "nodejs",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass --output-style compressed -o css/ css/ --source-map true",
     "watch": "onchange \"css/*.scss\" -- npm run sass"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Resemjen/WebsiteRSJ.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Resemjen/WebsiteRSJ/issues"
-  },
-  "homepage": "https://github.com/Resemjen/WebsiteRSJ#readme",
+  "description": "",
   "devDependencies": {
     "node-sass": "^5.0.0",
     "onchange": "^7.1.0"
