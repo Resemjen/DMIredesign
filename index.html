@@ -27,8 +27,6 @@
 
 <!-- Menu -->
 
-
-
 <nav class="navbar navbar-expand-lg navbar-light px-5" style="background-color:rgba(206,218,243,0.7)">
     <div class="container-fluid">
         <a class="navbar-brand text-logocolor" href="#"><img src="images/DMIlogosmall.png" alt="DMI Logo"></a>
@@ -68,9 +66,10 @@
 
 
 <body>
-<!-- varsel - ændrer efter vejr <div class="varsel px-5 text-logocolor" style="background-color: #dff700"> Varsel: Let tåge på storebæltsbroen. Forsigtig kørsel anbefales. </div> -->
-
-
+<!-- varsel - ændrer efter vejr </div> -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+</button>
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -93,7 +92,28 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-<br>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Læs om cookies her</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk</button>
+                <button type="button" class="btn btn-primary">Accepter cookies</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <br>
 
 <!-- Baggrundsbillede - ændrer efter vejr -->
@@ -141,10 +161,10 @@
     </div>
 </div>
             <br>
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false" >
+                <div class="carousel-inner p-4"style="background-color:rgba(255,255,255,0.6)">
+                    <div class="carousel-item active" >
+                        <div class="row" >
                             <div class="col text-center text-logocolor" >
                                 <h2 class="card-title text-center text-logocolor">Tir</h2>
                                 <img src="images/badweather.png" class="card-img-top" alt="...">
